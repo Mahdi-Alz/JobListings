@@ -1,7 +1,7 @@
 <script setup>
-import jobData from "@/jobs.json";
 import JobListing from "./JobListing.vue";
-import { ref, defineProps } from "vue";
+import { reactive, defineProps, onMounted } from "vue";
+import axios from "axios";
 defineProps({
   limit: Number,
   showButton: {
@@ -9,7 +9,16 @@ defineProps({
     default: false,
   },
 });
-const jobs = ref(jobData);
+const jobs = reactive([]);
+
+onMounted(async () => {
+  try {
+    const response = await axios.get("http://localhost:8000/jobs");
+    jobs.value = response.data;
+  } catch (error) {
+    console.log("Error fetching jobs");
+  }
+});
 </script>
 
 <template>
