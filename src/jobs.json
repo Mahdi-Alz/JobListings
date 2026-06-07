@@ -83,62 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "title": "dfef",
-      "type": "Full-Time",
-      "location": "wefwf",
-      "description": "wefefew",
-      "salary": "$50K - $60K",
-      "company": {
-        "name": "wefewf",
-        "description": "ewfewf",
-        "contactEmail": "ewfwfw@gmail.com",
-        "contactPhone": "12341421"
-      },
-      "id": "d4mwKyKaHkk"
-    },
-    {
-      "title": "dfef",
-      "type": "Full-Time",
-      "location": "wefwf",
-      "description": "wefefew",
-      "salary": "$50K - $60K",
-      "company": {
-        "name": "wefewf",
-        "description": "ewfewf",
-        "contactEmail": "ewfwfw@gmail.com",
-        "contactPhone": "12341421"
-      },
-      "id": "lw2UjKGWGwI"
-    },
-    {
-      "title": "dcervre",
-      "type": "Full-Time",
-      "location": "revevr",
-      "description": "everv",
-      "salary": "Under $50K",
-      "company": {
-        "name": "ervrev",
-        "description": "revrv",
-        "contactEmail": "rverver@gmail.com",
-        "contactPhone": "13232"
-      },
-      "id": "2s2quGWK8Mo"
-    },
-    {
-      "title": "fcevr",
-      "type": "Full-Time",
-      "location": "gbgbtybt",
-      "description": "ervrvev",
-      "salary": "$175K - $200K",
-      "company": {
-        "name": "jfbvlweivbwiletv",
-        "description": "vewktjbvwtilvbtwo;vbto;uvnto;utovnwotivk",
-        "contactEmail": "ewfwfw@gmail.com",
-        "contactPhone": "13232"
-      },
-      "id": "E0YB-kDnXE4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
