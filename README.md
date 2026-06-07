@@ -1,38 +1,46 @@
 # vue-crash-2024
 
-This template should help get you started developing with Vue 3 in Vite.
+Simple Vue 3 job board app built with Vite.
 
-## Recommended IDE Setup
+## What it does
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Shows a home page and job listings
+- Lets you view a single job
+- Lets you add and edit jobs
+- Uses `json-server` with `src/jobs.json` as the local API
 
-## Recommended Browser Setup
+## Project Structure
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+The project is organized around a small Vue app with routing, views, and reusable UI components:
 
-## Customize configuration
+- `src/main.js` - app entry point. It loads global styles, sets up Vue Router, and enables toast notifications.
+- `src/App.vue` - main app shell. It renders the navbar and the active route view.
+- `src/router/` - route definitions for the app pages.
+- `src/views/` - page-level components for home, jobs list, job details, add job, edit job, and 404.
+- `src/components/` - reusable UI pieces like the navbar, cards, listings, and buttons.
+- `src/jobs.json` - mock data source used by `json-server`.
+- `src/assets/` - global CSS and static assets such as the logo.
+- `public/` - public files served directly by Vite.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Run locally
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+npm run server
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Scripts
 
-```sh
-npm run build
-```
+- `npm run dev` - start the Vite dev server
+- `npm run build` - build for production
+- `npm run preview` - preview the production build
+- `npm run server` - start the local JSON API on port `8000`
+
+## Routes
+
+- `/` - home
+- `/jobs` - job list
+- `/jobs/:id` - job details
+- `/jobs/add` - add a job
+- `/jobs/edit/:id` - edit a job
