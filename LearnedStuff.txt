@@ -1,0 +1,38 @@
+Vue.js Subjects I Learned in This Project:
+
+Vue 3 project setup using Vite
+Single File Components, .vue files
+Composition API with <script setup>
+Creating and using reusable components
+Passing data to components with props
+Using slots for flexible component content
+Vue reactivity with ref() and reactive()
+Computed properties with computed()
+Lifecycle hooks, especially onMounted()
+Conditional rendering with v-if, v-else
+List rendering with v-for
+Event handling with @click and @submit.prevent
+Two-way form binding with v-model
+Dynamic attributes and classes with :class, :to, and :src
+Vue Router setup with createRouter and createWebHistory
+Page navigation using RouterLink
+Rendering routes with RouterView
+Dynamic routes with route params, like /jobs/:id
+Accessing route data with useRoute()
+Programmatic navigation with useRouter() / router.push()
+Building page-level views and separating them from reusable components
+Fetching API data with Axios
+CRUD operations: create, read, update, and delete jobs
+Loading states while waiting for API responses
+Error handling with try/catch/finally
+Using toast notifications with vue-toastification
+Using third-party UI helpers like vue-spinner and PrimeIcons
+Working with a local mock API using json-server
+Configuring Vite proxy for API requests
+Using path aliases like @/components/...
+Styling Vue components with Tailwind CSS
+Building forms for adding and editing data
+Organizing a Vue project into components, views, router, assets, and data files
+You can summarize it like this:
+
+In this project, I learned how to build a Vue 3 single-page application using Vite, Vue Router, reusable components, Composition API, reactive state, forms, API requests with Axios, CRUD operations, loading/error handling, and Tailwind CSS styling.
